@@ -1,11 +1,10 @@
-.c:>echo "srangers.\"
-if strangers meet 
+.if strangers meet 
 life begins- 
 not poor not rich 
-(only aware) 
+.(only aware) 
 kind neither 
 nor cruel 
-(only complete) 
+.(only complete) 
 i not not you 
 not possible; 
 only truthful 
@@ -13,6 +12,6 @@ only truthful
 if strangers(who 
 deep our most are 
 selves)touch: 
-forever 
+.forever 
  
-(and so to dark) 
+.(and so to dark) 

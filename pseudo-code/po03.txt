@@ -1,9 +1,8 @@
-.d:>echo "dream.\"
 it is at moments after i have dreamed 
 of the rare entertainment of your eyes, 
 when (being fool to fancy) i have deemed 
 
-with your peculiar mouth my heart made wise; 
+.with your peculiar mouth my heart made wise; 
 at moments when the glassy darkness holds 
 
 the genuine apparition of your smile 
@@ -14,7 +13,7 @@ moments when my once more illustrious arms
 are filled with fascination, when my breast 
 wears the intolerant brightness of your charms: 
 
-one pierced moment whiter than the rest 
+.one pierced moment whiter than the rest 
 
 -turning from the tremendous lie of sleep 
-i watch the roses of the day grow deep. 
+.i watch the roses of the day grow deep. 
