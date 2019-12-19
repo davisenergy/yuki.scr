@@ -1,4 +1,4 @@
-Microsoft Windows XP [Version 5.1.2600]
+.Microsoft Windows [Version 6.1.7100]
 .c:> ssh admin@microsoft.com
 .admin@microsoft.com:~$ cd /dev
 .admin@microsoft.com:~$ ls -al

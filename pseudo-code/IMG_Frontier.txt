@@ -1,0 +1,25 @@
+.                        .-                        
+.                  `.-:- ++ --.`                   
+.              -/osyyys-.yy./syyso/-`              
+.           -+yys+:.`   +yy+   `-/oyyo:`           
+.        `/sys/.       .yyyy`       -+yy+.         
+.       /syo-          +yyyy/         `/sy+`       
+.     .oys-           .yyyyys`          `+ys-      
+.    .syo`     `.     +yyyyyy:    .//`    -yy:     
+.   .syo`       -s+-``yyyyyyys ./sy/       -yy-    
+.   oys`         .syysyyyyyyyysyys-         :ys`   
+.  -yy/         `.:yyyyyyyyyyyyyy/-.`        sy/   
+.  :/:.`.-:/+osyyyyyyyy+.  `:syyyyyyyyso+/:-.-::   
+.`-/osyyyyyyyyyyyyyyyys      -yyyyyyyyyyyyyyyyyo/-`
+.  ---.-:/+osyyyyyyyyyy-     +yyyyyyyyyso+/:----   
+.  :yy:      `.-:/+yyyyyo//+syyyy+/:-.`      oy+   
+.  `sys           /yyyyyyyyyyyyyy/          -yy.   
+.   -yy+        `+s+--yyyyyyyy-:oy+`       `sy/    
+.    /yy+      `/-    oyyyyyy+   `:/`     .sy+     
+.     :yyo.           .yyyyyy.           :sy+      
+.      .oyy/`          oyyyy+          -oys-       
+.        :syy+-        .yyyy.       `:oys/`        
+.          -+yys+:.     oyy+    `-/oyyo:           
+.            `-/syyyso+-.yy.-+osyys+:`             
+.                `.:/++o`oo ++/:-`                 
+.                        .-                        

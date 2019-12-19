@@ -1,0 +1,1 @@
+.Assume the relaxation length of photons in the sample atmosphere is constant.

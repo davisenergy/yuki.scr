@@ -1,4 +1,4 @@
-admin@localhost /
+.admin@localhost /
 $ df -h
 Filesystem            Size  Used Avail Use% Mounted on
 C:\software\cygwin\bin

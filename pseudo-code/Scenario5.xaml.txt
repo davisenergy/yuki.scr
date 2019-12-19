@@ -1,0 +1,72 @@
+﻿'*********************************************************
+'
+' Copyright (c) Microsoft. All rights reserved.
+' This code is licensed under the Microsoft Public License.
+' THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+' ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+' IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+' PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+'
+'*********************************************************
+
+Imports SDKTemplate
+
+Imports System
+Imports System.Collections.Generic
+Imports System.Text
+Imports Windows.Storage
+Imports Windows.Storage.FileProperties
+Imports Windows.UI.Xaml
+Imports Windows.UI.Xaml.Controls
+Imports Windows.UI.Xaml.Navigation
+
+''' <summary>
+''' An empty page that can be used on its own or navigated to within a Frame.
+''' </summary>
+Partial Public NotInheritable Class Scenario5
+    Inherits SDKTemplate.Common.LayoutAwarePage
+    Private rootPage As MainPage = MainPage.Current
+
+    Public Sub New()
+        Me.InitializeComponent()
+        AddHandler ShowPropertiesButton.Click, AddressOf ShowPropertiesButton_Click
+    End Sub
+
+    Private Async Sub ShowPropertiesButton_Click(sender As Object, e As RoutedEventArgs)
+        Dim file As StorageFile = rootPage.sampleFile
+        If file IsNot Nothing Then
+            ' Get top level file properties
+            Dim outputText As New StringBuilder()
+            outputText.AppendLine("File name: " & file.Name)
+            outputText.AppendLine("File type: " & file.FileType)
+
+            ' Get basic properties
+            Dim basicProperties As BasicProperties = Await file.GetBasicPropertiesAsync()
+            outputText.AppendLine("File size: " & basicProperties.Size & " bytes")
+            outputText.AppendLine("Date modified: " & basicProperties.DateModified.ToString)
+
+            ' Get library specific properties
+            Dim documentProperties As DocumentProperties = Await file.Properties.GetDocumentPropertiesAsync()
+            outputText.Append("Author: ")
+            For i As Integer = 0 To documentProperties.Author.Count - 1
+                Dim author As String = documentProperties.Author(i)
+                outputText.Append(author & " ")
+            Next
+
+            ' Get extra properties
+            Dim propertiesName As New List(Of String)()
+            propertiesName.Add("System.Keywords")
+            Dim extraProperties As IDictionary(Of String, Object) = Await file.Properties.RetrievePropertiesAsync(propertiesName)
+            Dim propertiesValue As Object = Nothing
+            extraProperties.TryGetValue("System.Keywords", propertiesValue)
+            outputText.Append(Environment.NewLine & "Keywords: ")
+            If propertiesValue IsNot Nothing Then
+                For Each propertyValue As String In TryCast(propertiesValue, IList(Of String))
+                    outputText.Append(propertyValue & " ")
+                Next
+            End If
+
+            OutputTextBlock.Text = outputText.ToString
+        End If
+    End Sub
+End Class
