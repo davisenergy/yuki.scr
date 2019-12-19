@@ -43,4 +43,4 @@ lrwxrwxrwx  1 root root    29 2007-07-17 21:05 vmlinuz -> boot/vmlinuz-2.6.20-15
 processing script...
 .|===============================================|
 script complete.
-the world belongs to admin.
+.the world belongs to admin.
